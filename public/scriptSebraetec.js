@@ -9,8 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const cpf = localStorage.getItem("cpf");
   const servicos = localStorage.getItem("servico");
   
-
-  // Função para obter o nome fantasia -------------------------------------------------
+  // Função para obter o nome fantasia
   function obterNomeFantasia() {
     // Coleta o valor de dadosCnpj.fantasia
     let nomeFantasia = dadosCnpj.fantasia;
@@ -27,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Obtém o nome fantasia
   const nomeFantasia = obterNomeFantasia();
-// -------------------------------------------------------------------------------------
+
    
    
   if (!dadosCnpj || !cepDigitado) {
@@ -47,13 +46,15 @@ document.addEventListener("DOMContentLoaded", function () {
       inscrição no CPF nº ${cpf}, residente à ${cepDigitado.logradouro}, nº ${numeroResidencia}, bairro ${cepDigitado.bairro},
       CEP ${cepDigitado.cep}, na comarca de ${cepDigitado.localidade} - ${cepDigitado.uf}, telefone de contato ${telefone} e e-mail
       pessoal ${emailpessoal}, denominado(a) como <b>CONTRATANTE</b>
-    </p>`;
+    </p>
+  `;
 
   const reportProduto = document.getElementById("reportProduto");
   reportProduto.innerHTML = `
     <p style="text-align: justify;">
     Produto específico da prestação dos serviços: ${servicos}
-    </p>`;
+    </p>
+  `;
   
   const clienteAssinante = document.getElementById("clienteAssinante");
   clienteAssinante.innerHTML = `
@@ -61,9 +62,10 @@ document.addEventListener("DOMContentLoaded", function () {
     <b>CONTRATANTE / EMPRESA</b><br>
     <b>${nomeCliente}<b><br>
     <b>${cpf}<b>
-    </p>`;
+    </p>
+  `;
 
-
+  
   
   document.getElementById("voltar").addEventListener("click", function () {
     window.location.href = "/index.html";

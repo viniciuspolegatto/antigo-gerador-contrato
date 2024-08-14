@@ -6,17 +6,6 @@
     <title>Pesquisa de CNPJ para Contrato</title>
     <script src="scriptImpressao.js" defer></script>
     <link rel="stylesheet" href="style.css" />
-    
-        <!-- Adicione isso ao seu HTML onde o script será carregado -->
-<script>
-  document.getElementById('SenaiEnviaBd').addEventListener('click', function() {
-    // Carrega o scriptSENAI.js dinamicamente
-    const script = document.createElement('script');
-    script.src = 'scriptSENAI.js';
-    document.body.appendChild(script);
-  });
-</script>
-
   </head>
   
     <header style="position: fixed; top: 0; width: 100%; z-index: 1000; background-color: #003366; height: 70px; display: flex; justify-content: space-between; align-items: center;">
@@ -120,9 +109,7 @@
             <table  style="border: 1px solid black; background-color: #e0e0e0;">
               <tr>
                 <td>
-                  <button id="SenaiEnviaBd">
-                    <a href="/sebraetecSENAI.html">Gerar SEBRAETEC SENAI</a>
-                  </button>
+                  <a href="/sebraetecSENAI.html">Gerar SEBRAETEC SENAI</a>
                 </td>
                 <td>|</td>
                 <td>Gerar SEBRAETEC 3ªVIA</td>
@@ -210,17 +197,6 @@
       </tbody>
     </table>
 <br><br>
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
     
     <footer style="background-color: black; height: 30px; display: flex; align-items: center;">
         <nav style="width: 100%; display: flex; justify-content: space-around;">
